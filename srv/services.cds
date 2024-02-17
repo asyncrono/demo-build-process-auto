@@ -40,7 +40,7 @@ function addQuotes(value : String) returns DataString;
 @Core.Description : 'listToString'
 action listToString(responseArray : array of DataList, field : String) returns DataString;
 
-@Core.Description : 'get list of dodos'
+@Core.Description : 'get list of Todos'
 function getListOfTodos() returns DataListArray;
 
 }

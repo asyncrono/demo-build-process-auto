@@ -1,9 +1,5 @@
 {
-  "name": ",
-  "cds": {
-  "requires": { "auth": { "kind": "dummy" }}
-  }
-  ",
+  "name": "demo-build-process-auto",
   "version": "1.0.0",
   "description": "A simple CAP project.",
   "repository": "<Add your repository here>",
@@ -15,7 +11,7 @@
   },
   "devDependencies": {
     "@cap-js/sqlite": "^1",
-    "@sap/cds-dk": "^7"
+    "@sap/cds-dk": "^7" 
   },
   "scripts": {
     "start": "cds-serve"
