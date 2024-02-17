@@ -55,9 +55,9 @@
         }
       }
     },
-    "/getListOfTodos()": { 
+    "/getListOfTodos()": {
       "get": {
-        "summary": "get list of dodos",
+        "summary": "get list of Todos",
         "tags": [
           "Service Operations"
         ],
@@ -134,7 +134,7 @@
         }
       }
     },
-    "/toInteger(value='{value}')": {    
+    "/toInteger(value='{value}')": {
       "get": {
         "summary": "toInteger",
         "tags": [
@@ -153,7 +153,6 @@
           }
         ],
         "responses": {
-    
           "200": {
             "description": "Success",
             "content": {
@@ -175,26 +174,25 @@
         }
       }
     },
-    "/toNumber(value='{value}')": {    
-  "get": {
-    "summary": "toNumber",
-    "tags": [
-      "Service Operations"
-    ],
-    "parameters": [
-      {
-        "required": true,
-        "in": "path",
-        "name": "value",
-        "description": "String value needs to be enclosed in single quotes",
-        "schema": {
-          "type": "string",
-          "default": ""
-        }
-      }
-    ],
-    "responses": {
-
+    "/toNumber(value='{value}')": {
+      "get": {
+        "summary": "toNumber",
+        "tags": [
+          "Service Operations"
+        ],
+        "parameters": [
+          {
+            "required": true,
+            "in": "path",
+            "name": "value",
+            "description": "String value needs to be enclosed in single quotes",
+            "schema": {
+              "type": "string",
+              "default": ""
+            }
+          }
+        ],
+        "responses": {
           "200": {
             "description": "Success",
             "content": {
@@ -216,7 +214,7 @@
         }
       }
     },
-    "/toStr(value={value})": {
+    "/toStr(value='{value}')": {
       "get": {
         "summary": "toString",
         "tags": [
@@ -239,12 +237,11 @@
               ],
               "example": 3.14,
               "nullable": true,
-              "default": ""
+              "default": "null"
             }
           }
         ],
         "responses": {
-    
           "200": {
             "description": "Success",
             "content": {
@@ -304,16 +301,16 @@
           }
         }
       },
-      "sap_build_cap_sample_library.DataListArray": {
+      "demo_build_process_auto.DataListArray": {
         "title": "DataListArray",
         "type": "object",
         "properties": {
-            "responseArray": {
+          "responseArray": {
             "type": "array",
-            "required": true,
+            "required":true,
             "items": {
-                "$ref": "#/components/schemas/sap_build_cap_sample_library.DataList"
-            }    
+              "$ref": "#/components/schemas/demo_build_process_auto.DataList"
+            }
           }
         }
       },
